@@ -20,6 +20,9 @@ jobs:
         run: terraform validate
       - name: plan
         run: terraform plan
+        env:
+        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+
 
 
 
